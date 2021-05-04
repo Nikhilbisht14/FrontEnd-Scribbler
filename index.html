@@ -2,12 +2,39 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <title>ScriBBler</title>
+    <link rel="stylesheet" href="styles/index.css" >
+    <link rel="stylesheet" href="styles/common.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div id="container">
+        <div class="header">
+            <div class="title-container">
+                <p class="title">ScriBBler</p>
+                <p class="sub-title">Explore, Imagine, Create</p>
+            </div>
+            <div class="button-container">
+                <button id="sign-up-button" class="SignBtn" data-toggle="modal" data-target="#ModalSignUp" >Sign Up</button>
+                <button id="sign-in-button"  class="SignBtn" data-toggle="modal" data-target="#ModalSignIn">Sign In</button>
+            </div>
+        </div>
+        <div class="postButtons">
+            <button id="allPostBtn" class="postBtn">All Posts</button>
+            <button id="createPostBtn"  class="postBtn" data-toggle="modal" data-target="#ModalCreatPost">Create Post</button>
+        </div>
+    </div>
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
