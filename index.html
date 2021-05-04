@@ -65,6 +65,35 @@
       </div>
     </div>
 
+    <!-- Modal for Sign-In -->
+    <div class="modal" id="ModalSignIn" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div id="header-model" class="header">
+            <h3 class="modal-title">Welcome Back!</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <hr class="horizontal">
+            <form>
+                <div class="form-group">
+                    <label for="username" class="label-text">Username</label>
+                    <input class="form-control" type="text" id="username" placeholder="Enter your username" required>
+
+                    <label for="password" class="label-text">Password</label>
+                    <input class="form-control" type="password" id="password" placeholder="Enter your password" required>
+
+                    <button  class="btn btn-success btn-block" type="submit" class="signin-btn">Sign In</button>
+                </div>
+            </form>
+          </div>
+          <div class="footer-modal">
+            <p class=bottom-banner>Not a member? <a id="openSignUp" class="close link-primary" data-dismiss="modal" data-toggle="modal" data-target="#ModalSignUp">Sign Up</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="scripts/common.js"></script>
     <script src="scripts/index.js"></script>
 </body>
