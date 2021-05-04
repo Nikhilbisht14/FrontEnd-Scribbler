@@ -94,6 +94,32 @@
       </div>
     </div>
 
+    <!-- Modal for Create Post -->
+    <div class="modal" id="ModalCreatPost" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div id="header-model" class="header">
+            <h3 class="modal-title">Pen Your Post</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <hr class="horizontal">
+            <form>
+                <div class="form-group">
+                    <label for="title" class="label-text">Title</label>
+                    <input class="form-control" type="text" id="title" placeholder="Enter title of your post" required>
+  
+                    <label for="contents" class="label-text">Contents</label>
+                    <textarea id="contents" cols="100" rows="8"  placeholder="Enter the contents of your post" required></textarea>
+  
+                    <button  class="btn btn-success text-center create-btn" type="submit">Create</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="scripts/common.js"></script>
     <script src="scripts/index.js"></script>
 </body>
