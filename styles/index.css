@@ -47,12 +47,20 @@ body{
 
 
 textarea{
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
-.create-btn{
-  margin-top: 10px;
-  margin-bottom: 8px;
-  font-size: 14px;
-  /* width:100px; */
+#create-btn{
+    display: block;
+    margin: auto;
+    align-items: center;
+    height: 2rem;
+    width: 6rem;
+    margin-top: 15px;
+    font-size: 6px;
+    border: 2px solid none;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    font-size: 16px;
+    padding: 2px 2px 4px 2px;
 }

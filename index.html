@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="postButtons">
-            <button id="allPostBtn" class="postBtn">All Posts</button>
+            <button id="allPostBtn" class="postBtn" onclick="navigateToBlogList()">All Posts</button>
             <button id="createPostBtn"  class="postBtn" data-toggle="modal" data-target="#ModalCreatPost">Create Post</button>
         </div>
     </div>
@@ -110,9 +110,9 @@
                     <input class="form-control" type="text" id="title" placeholder="Enter title of your post" required>
   
                     <label for="contents" class="label-text">Contents</label>
-                    <textarea id="contents" cols="100" rows="8"  placeholder="Enter the contents of your post" required></textarea>
-  
-                    <button  class="btn btn-success text-center create-btn" type="submit">Create</button>
+                    <textarea id="contents" class="form-control mb-4" cols="101.4" rows="8" placeholder="Enter the contents of your post" required></textarea>
+                    
+                    <button id="create-btn"  class="btn btn-success mt-4 mb-0" type="submit">Create</button>
                 </div>
             </form>
           </div>
