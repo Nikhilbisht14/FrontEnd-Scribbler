@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Font Awesome CDN -->
+    <!-- Google Fonts CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <link href="../styles/post.css" rel="stylesheet">
+    
+    <!-- Bootstrao CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- code for header  -->
+    <div id="container">
+        <div class="header">
+            <div class="title-container">
+                <p class="title">ScriBBler</p>
+                <p class="sub-title">Explore, Imagine, Create</p>
+            </div>
+            <div class="button-container">
+                <button id="sign-up-button" class="SignBtn" data-toggle="modal" data-target="#ModalSignUp" >Sign Up</button>
+                <button id="sign-in-button"  class="SignBtn" data-toggle="modal" data-target="#ModalSignIn">Sign In</button>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal for Sign-Up -->
+<div class="modal" id="ModalSignUp" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div id="header-model" class="header">
+        <h2 class="modal-title">Get Started</h2>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <hr class="horizontal">
+        <form>
+            <div class="form-group">
+                <label for="name" class="label-text">Name</label>
+                <input class="form-control" type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="username" class="label-text">Username</label>
+                <input class="form-control" type="text" id="username" placeholder="Enter your username" required>
+
+                <label for="password" class="label-text">Password</label>
+                <input class="form-control" type="password" id="password" placeholder="Enter your password" required>
+
+                <label for="confirmpassword" class="label-text">Confirm Password</label>
+                <input class="form-control" type="password" id="confirmpassword" placeholder="Re-enter your password" required>
+           
+                <button  class="btn btn-success btn-block" type="submit" class="signup-btn">Sign Up</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Sign-In -->
+<div class="modal" id="ModalSignIn" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div id="header-model" class="header">
+        <h3 class="modal-title">Welcome Back!</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <hr class="horizontal">
+        <form>
+            <div class="form-group">
+                <label for="username" class="label-text">Username</label>
+                <input class="form-control" type="text" id="username" placeholder="Enter your username" required>
+
+                <label for="password" class="label-text">Password</label>
+                <input class="form-control" type="password" id="password" placeholder="Enter your password" required>
+
+                <button  class="btn btn-success btn-block" type="submit" class="signin-btn">Sign In</button>
+            </div>
+        </form>
+      </div>
+      <div class="footer-modal">
+        <p class=bottom-banner>Not a member? <a id="openSignUp" class="close link-primary" data-dismiss="modal" data-toggle="modal" data-target="#ModalSignUp">Sign Up</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- To display the post title, author name and content -->
+<div id="post-title" >
+  <p id="title"></p>
+</div>
+
+<div id="post-auth">
+  <h5 id="auth"></h5>
+  <button id="editBtn" type="button">Edit  <i class="fa fa-edit"></i></button>
+</div>
+
+<div id="post-desc" >
+  <p id="desc"></p>
+</div>
+
+
+<!-- Like section -->
+<div id="like-section">
+  <button type="button" class="post-btn" onclick="increaseLike()"><i class="fa fa-thumbs-up"></i> Like</button>
+  <p id="like-text" style="font-family: monospace; margin-top: 10px;">Be the first one to like this!</p>
+</div>
+
+<!-- Comment section -->
+<div id="comment-section">
+  <textarea placeholder="Leave a comment..." id="comment-textarea"></textarea>
+  <button type="button" class="post-btn" onclick="addComment()">Comment</button>
+  <h5 id="headCmtTag">All Comments</h5>
+  <div id="all-comments"></div>
+</div>
+
+
+<script src="../scripts/post.js"></script>
+</body>
+
+</html>
