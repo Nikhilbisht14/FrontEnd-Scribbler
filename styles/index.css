@@ -1,3 +1,4 @@
+//Header styling
 html{
     height: 100%;
     width:100%
@@ -25,15 +26,6 @@ body{
   }
 
 .postBtn{
-    /* background-color: yellow;
-    padding: 8px 8px 8px 8px;
-    color:black;
-    font-family: 'Ubuntu Condensed';
-    font-size: 16px;
-    margin-bottom: 7rem;
-    margin-left: 10px;
-    border-color: white;     */
-
   background-color: yellow;
 	color: black;
 	text-align: center;
