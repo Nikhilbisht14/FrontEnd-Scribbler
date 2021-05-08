@@ -1,0 +1,233 @@
+/* Styling for headers */
+html{
+    height: 100%;
+    width:100%;
+  }
+
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-size: 100% cover!important;
+    margin: 0 !important;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffeedd;
+    height: 15%;
+    width: 100%;
+  }
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.title{
+    font-family: 'Montez', cursive;
+    font-size: xx-large;
+    color: blue;
+    margin-bottom: 0px!important;
+    margin-top: 5px;
+}
+
+.sub-title{
+    margin-top: 0px!important;
+    font-family: 'Ubuntu Mono',monospace;
+    color: black;
+    font-size: 12px;
+}
+
+.button-container{
+    padding: 10px;
+    float: right;
+    text-align: right;
+}
+
+.SignBtn{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin-left: 7px;
+    padding: 8px 8px 8px 8px;
+    border: none;
+    font-size: 14px;
+    width: 90px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal {
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content{
+  background-color: #fefefe;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+#header-model {
+  margin-bottom: 0px;
+}
+
+.horizontal{
+  margin-top: 0px;
+  margin-bottom: 4px;
+  color: black;
+  border-top: 1px solid black;
+
+}
+
+.btn-block{
+  margin-top: 1rem;
+}
+
+.form-control {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.label-text {
+  margin-bottom: 3px;
+  padding-top: 2px;
+  margin-top: 3px;
+  padding-bottom: 2px;
+}
+
+
+.footer-modal{
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#openSignUp{
+  color:#00008B;
+  font-size: 15px;
+  padding-top: 5px;
+  margin-left: 6px;
+  filter: brightness(200%);
+}
+
+/* ----------Cards Styling------------- */
+
+.posts{
+  background-color: #ffeedd;
+}
+
+.post-card{
+  background-color: lightgrey;
+  width: 700px;
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+  border: 3px;
+  border-radius: 25px;
+  margin: 40px;
+  box-shadow: grey;
+  flex: 0 1 30%;
+}
+
+.post-card:hover {
+  box-shadow: 0 0 40px rgba(33,33,33,.2); 
+}
+
+.post-author{
+  background-color: white;
+  border-radius: 20px 0px 0px 20px;
+  color: darkslategrey;
+  font-weight: bold;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  width: 25%;
+  text-align: center;
+}
+
+.posts{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;    
+}
+
+.post-title{
+  font-size: larger;
+  font-family: sans-serif;
+  color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+p{
+  font-family: sans-serif;
+  font-size: medium;
+}
+
+.post-content{
+  margin: 10px;
+}
+
+
+.yes-btn{
+  background-color:green;
+  color:white;
+  width:90px;
+  height:40px;
+  margin-left: 65px;
+  margin-bottom: 25px;
+  border: none;
+
+}
+
+.no-btn{
+  background-color: red;
+  color:white;
+  width: 90px;
+  height: 40px;
+  margin-right: 65px;
+  margin-bottom: 25px;
+  border: none;
+}
+
+.post-description {
+  max-width: 700px;
+  height: 53px;
+  overflow: hidden;
+}
+
+.delete-header{
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  height: 50px;
+}
