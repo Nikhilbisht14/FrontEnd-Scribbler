@@ -62,14 +62,10 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 45%;
-  height: 45%; */
 }
 
 .modal-content{
   background-color: #fefefe;
-  /* margin: auto;
-  padding: 20px; */
   border: 1px solid #888;
   width: 40%;
 }
